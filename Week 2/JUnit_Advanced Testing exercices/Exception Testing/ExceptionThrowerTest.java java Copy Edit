@@ -1,0 +1,23 @@
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
+
+public class ExceptionThrowerTest {
+
+    ExceptionThrower thrower = new ExceptionThrower();
+
+    @Test
+    void testThrowsExceptionForNullInput() {
+        Exception exception = assertThrows(IllegalArgumentException.class, () -> {
+            thrower.throwException(null);
+        });
+
+        assertEquals("Input cannot be null", exception.getMessage());
+    }
+
+    @Test
+    void testNoExceptionForValidInput() {
+        assertDoesNotThrow(() -> {
+            thrower.throwException("Hello");
+        });
+    }
+}
