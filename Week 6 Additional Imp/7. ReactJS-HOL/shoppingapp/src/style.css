@@ -1,0 +1,33 @@
+.mydiv {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  color: green;
+  margin-top: 30px;
+}
+
+h1 {
+  color: green;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Style the table */
+table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  color: green;
+  border: 2px solid #ccc;
+}
+
+/* Style for table headers */
+th {
+  border: 1px solid gray;
+  padding: 10px 30px;
+  font-weight: bold;
+}
+
+/* Style for table cells */
+td {
+  border: 1px solid gray;
+  padding: 10px 30px;
+}
